@@ -5,6 +5,10 @@
 document.querySelector('#uf').addEventListener('click', function () {
     traerValores('uf');
 });
+document.querySelector('#utm').addEventListener('click', function () {
+    traerValores('utm');
+});
+
 
 //Parametro desde querySelector y se pasa el tipo de valor
 function traerValores(valor) {
@@ -37,9 +41,13 @@ function traerValores(valor) {
                 i++;
 
                 //substring para cortar texto, se parte del 10 al caracter 10
-                resultado.innerHTML += `<li>${item.fecha.substring(0,10)} - ${item.valor}</li>`;
+                resultado.innerHTML += `
+                    <tr>
+                    <td>${item.fecha.substring(0, 10)}</td>
+                    <td>${item.valor}</td>
+                    </tr>`;
 
-                if (i > 10){
+                if (i > 10) {
                     break;
                 }
             }

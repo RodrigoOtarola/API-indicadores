@@ -16,9 +16,18 @@
     <div class="section">
         <button class="btn blue" onclick="traerValores('dolar')">Dolar</button>
         <button class="btn red" id="uf">UF</button>
+        <button class="btn yellow" id="utm">U.T.M</button>
     </div>
     <div class="section">
-        <ul id="result"></ul>
+        <table class="striped centered responsive-table">
+            <thead>
+            <tr>
+                <th>Fecha</th>
+                <th>Valor</th>
+            </tr>
+            </thead>
+            <tbody id="result"></tbody>
+        </table>
     </div>
 </div>
 
