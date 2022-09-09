@@ -2,12 +2,16 @@
 // document.querySelector('#dolar').addEventListener('click', function () {
 //     traerValores('dolar');
 // });
+document.querySelector('#euro').addEventListener('click', function () {
+    traerValores('euro');
+});
 document.querySelector('#uf').addEventListener('click', function () {
     traerValores('uf');
 });
 document.querySelector('#utm').addEventListener('click', function () {
     traerValores('utm');
 });
+
 
 
 //Parametro desde querySelector y se pasa el tipo de valor
@@ -44,10 +48,10 @@ function traerValores(valor) {
                 resultado.innerHTML += `
                     <tr>
                     <td>${item.fecha.substring(0, 10)}</td>
-                    <td>${item.valor}</td>
+                    <td>$${item.valor}</td>
                     </tr>`;
 
-                if (i > 10) {
+                if (i > 5) {
                     break;
                 }
             }
