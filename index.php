@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Practica API</title>
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!--Google Icon-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+<div class="container">
+    <h2>Indicadores economicos:</h2>
+    <ul class="collapsible">
+        <li>
+            <div class="collapsible-header">
+                <i class="material-icons">list_alt</i>
+                Ver indicadores ultimos 6 meses.
+                <span class="badge"></span></div>
+            <div class="collapsible-body"><p><?php include 'indTabla.php'; ?></p></div>
+        </li>
+        <li>
+            <div class="collapsible-header">
+                <i class="material-icons">event</i>
+                Buscar por día especifico.
+                <span class="badge"></span></div>
+            <div class="collapsible-body">
+                <p>Selecciona el indicador:</p>
+                <p><?php include 'indCalculo.php' ?></p>
+            </div>
+        </li>
+    </ul>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
