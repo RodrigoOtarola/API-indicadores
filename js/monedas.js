@@ -46,10 +46,19 @@ function traerValores(valor) {
 
                 //substring para cortar texto, se parte del 10 al caracter 10
                 resultado.innerHTML += `
+                    <thead>
+                    <tr>
+                    <th>Fecha</th>
+                    <th>Valor</th>
+                    </tr>
+                    </thead>                    
                     <tr>
                     <td>${item.fecha.substring(0, 10)}</td>
                     <td>$${item.valor}</td>
-                    </tr>`;
+                    </tr>
+                    <tbody></tbody>
+                    </table>                    
+                    `;
 
                 if (i > 5) {
                     break;

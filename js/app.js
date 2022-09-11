@@ -17,10 +17,12 @@ document.addEventListener('DOMContentLoaded', function () {
         format : 'dd-mm-yyyy',
         i18n:{
             months: ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 'Julio', 'Agosto', 'Septiembre', 'Octubre', 'Noviembre', 'Diciembre'],
-            weekdays: ['Domingo', 'Lunes', 'Martes', 'Miércoles', 'Jueves', 'Viernes', 'Sábado'],
+            weekdays: ['Lunes', 'Martes', 'Miércoles', 'Jueves', 'Viernes'],
             monthsShort: ['Ene', 'Feb', 'Mar', 'Abr', 'May', 'Jun', 'Jul', 'Ago', 'Sep', 'Oct', 'Nov', 'Dic'],
             weekdaysShort: ['Dom', 'Lun', 'Mar', 'Mié', 'Jue', 'Vie', 'Sáb'],
-            weekdaysAbbrev:['D','L','M','M','J','V','S']
+            weekdaysAbbrev:['D','L','M','M','J','V','S'],
+            //Definir días de fin de semana;
+
         },
     });
 });

@@ -5,14 +5,8 @@
     <button class="btn yellow" id="utm">U.T.M</button>
 </div>
 <div class="section">
-    <table class="striped centered responsive-table #03a9f4 light-blue">
-        <thead>
-        <tr>
-            <th>Fecha</th>
-            <th>Valor</th>
-        </tr>
-        </thead>
-        <tbody id="result"></tbody>
+    <table class="striped centered responsive-table #03a9f4 light-blue" id="result">
+
     </table>
 </div>
 <script src="js/monedas.js"></script>

@@ -1,11 +1,17 @@
 //prueba
-function envioDatos() {
+
+
+//function envioDatos() {
+
+//alert('Prueba de concatenacion...... ' + indicador +'/'+ fecha);
+//}
+
+function traerValor(valor) {
+
     let indicador = document.getElementById('indicador').value;
     let fecha = document.getElementById('date').value;
-    //alert('Prueba de concatenacion...... ' + indicador +'/'+ fecha);
-}
-/*function traerValor(valor) {
-    let url = `https://mindicador.cl/api/${indicaror}/${fecha}`;
+
+    let url = `https://mindicador.cl/api/${indicador}/${fecha}`;
 
     //consulta con AJAX
     const api = new XMLHttpRequest();
@@ -19,31 +25,52 @@ function envioDatos() {
 
             //parsear json, primero se crea variable y posterior el responseText
             let datos = JSON.parse(this.responseText);
-            //console.log(datos.serie);
+            console.log(datos.serie);
 
             //guardar variable result, que viene del html
-            let resultado = document.querySelector('#result');
-            resultado.innerHTML = '';
+            let resultado = document.querySelector('#valor');
 
-            let i = 0;
+            const element = document.createElement('div');
+
+            element.innerHTML = '';
+
+            //let i = 0;
 
             //ciclo para recorrer array
             for (let item of datos.serie) {
-                //console.log(item.fecha);
+                console.log(item.valor);
 
-                i++;
 
-                //substring para cortar texto, se parte del 10 al caracter 10
-                resultado.innerHTML += `
-                    <tr>
-                    <td>${item.fecha.substring(0, 10)}</td>
-                    <td>$${item.valor}</td>
-                    </tr>`;
+                //substring para cortar texto, se parte del 10 al caracter 10*/
 
-                if (i > 5) {
-                    break;
-                }
+                element.innerHTML += `<input 
+                    type="text" 
+                    class="input-fields #e8f5e9 green lighten-5" 
+                    name="valorDevuelto" 
+                    id="valorDevuelto" 
+                    value="${item.valor}"
+                    style="border: 2px solid black;text-align: center" 
+                    disabled>
+                    `;
+
+                resultado.appendChild(element);
             }
         }
     }
+}
+
+/*let contenido = document.querySelector('#contenido')
+
+function traer(){
+    fetch('https://randomuser.me/api')
+        .then(res=>res.json())
+        .then(data=>{
+            console.log(data.results[0])//Imprime el valr email
+
+            //Para imprimir valores por el html
+            contenido.innerHTML = `
+            <img src="${data.results[0].picture.medium}" width="100px" alt="">
+            <p>Nombre: ${data.results[0].name.first}</p>            
+            `
+        })
 }*/
