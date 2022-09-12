@@ -24,14 +24,14 @@
                 <i class="material-icons">list_alt</i>
                 Ver indicadores ultimos 6 meses.
                 <span class="badge"></span></div>
-            <div class="collapsible-body"><p><?php include 'indTabla.php'; ?></p></div>
+            <div class="collapsible-body white"><p><?php include 'indTabla.php'; ?></p></div>
         </li>
         <li>
             <div class="collapsible-header">
                 <i class="material-icons">event</i>
                 Buscar por día especifico.
                 <span class="badge"></span></div>
-            <div class="collapsible-body">
+            <div class="collapsible-body white">
                 <p>Selecciona el indicador:</p>
                 <p><?php include 'indCalculo.php' ?></p>
             </div>
@@ -41,7 +41,7 @@
                 <i class="material-icons">calculate</i>
                 Conversión monetaria.
                 <span class="badge"></span></div>
-            <div class="collapsible-body">
+            <div class="collapsible-body white">
                 <p>En contruccion:</p>
 <!--                <p>--><?php //include 'conversor.php' ?><!--</p>-->
             </div>
