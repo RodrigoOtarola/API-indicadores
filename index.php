@@ -22,15 +22,19 @@
         <li>
             <div class="collapsible-header">
                 <i class="material-icons">list_alt</i>
-                Ver indicadores ultimos 6 meses.
-                <span class="badge"></span></div>
-            <div class="collapsible-body white"><p><?php include 'indTabla.php'; ?></p></div>
+                Ver indicadores ultimos 6 valores.
+                <span class="badge"></span>
+            </div>
+            <div class="collapsible-body white">
+                <p><?php include 'indTabla.php' ?></p>
+            </div>
         </li>
         <li>
             <div class="collapsible-header">
                 <i class="material-icons">event</i>
                 Buscar por día especifico.
-                <span class="badge"></span></div>
+                <span class="badge"></span>
+            </div>
             <div class="collapsible-body white">
                 <p>Selecciona el indicador:</p>
                 <p><?php include 'indCalculo.php' ?></p>
@@ -40,10 +44,11 @@
             <div class="collapsible-header">
                 <i class="material-icons">calculate</i>
                 Conversión monetaria.
-                <span class="badge"></span></div>
+                <span class="badge"></span>
+            </div>
             <div class="collapsible-body white">
                 <p>En contruccion:</p>
-<!--                <p>--><?php //include 'conversor.php' ?><!--</p>-->
+                <!--                <p>--><?php //include 'conversor.php' ?><!--</p>-->
             </div>
         </li>
     </ul>
@@ -51,7 +56,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 <script src="js/app.js"></script>
 <footer class="page-footer #e3f2fd blue lighten-5 black-text">
-   Derechos reservados © <?php echo date('Y'); ?>
+    Derechos reservados © <?php echo date('Y'); ?>
 </footer>
 </body>
 </html>

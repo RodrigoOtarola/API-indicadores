@@ -4,9 +4,12 @@
 //}
 
 
-
 //Function para retornar valor ocupando fetch
-function traerValor(valor) {
+const traerValor = document.querySelector('#traerValor');
+
+traerValor.addEventListener('click', () => {
+
+    document.querySelector('#traerValor').style.display = 'none';
 
     let indicador = document.getElementById('indicador').value;
     let fecha = document.getElementById('date').value;
@@ -23,7 +26,7 @@ function traerValor(valor) {
 
             element.innerHTML += `<input 
                     type="text" 
-                    class="input-fields #e8f5e9 green lighten-5" 
+                    class="input-field #e8f5e9 green lighten-5" 
                     name="valorDevuelto" 
                     id="valorDevuelto" 
                     value="$${data.serie[0].valor}"
@@ -32,5 +35,22 @@ function traerValor(valor) {
                     `;
 
             resultado.appendChild(element);
-        })
-};
+
+            let limpiarForm = document.querySelector('#limpiarForm');
+
+            limpiarForm.style.display = 'block';
+
+            limpiarForm.addEventListener('click',()=>{
+                limpiarForm.style.display = 'none';
+                traerValor.style.display = 'block';
+                element.innerHTML = '';
+            })
+        });
+});
+
+
+/*
+function traerValor(valor) {
+
+
+};*/
