@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Indicadores</title>
     <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" href="./css/normalize.css" type="text/css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <!-- Compiled and minified CSS -->
@@ -16,7 +17,7 @@
 </head>
 <body>
 <div class="container">
-    <h2>Indicadores economicos:</h2>
+    <h2 class="white-text">Indicadores economicos:</h2>
     <ul class="collapsible">
         <li>
             <div class="collapsible-header">
@@ -42,12 +43,15 @@
                 <span class="badge"></span></div>
             <div class="collapsible-body">
                 <p>En contruccion:</p>
-                <p><?php include 'conversor.php'?></p>
+<!--                <p>--><?php //include 'conversor.php' ?><!--</p>-->
             </div>
         </li>
     </ul>
 </div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 <script src="js/app.js"></script>
+<footer class="page-footer #e3f2fd blue lighten-5 black-text">
+   Derechos reservados © <?php echo date('Y'); ?>
+</footer>
 </body>
 </html>

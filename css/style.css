@@ -2,3 +2,23 @@
 *{
     font-family: 'Montserrat', sans-serif;
 }
+body{
+    background-image: url("../img/back3.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
+footer{
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    margin-top: 5px;
+    text-align: center;
+    font-size: 15px;
+    font-style: oblique;
+    letter-spacing: 3px;
+    justify-content: center;
+    align-items: center;
+
+}

@@ -5,7 +5,7 @@
     <button class="btn yellow" id="utm">U.T.M</button>
 </div>
 <div class="section">
-    <table class="striped centered responsive-table #03a9f4 light-blue">
+    <table class="striped centered responsive-table #bbdefb blue lighten-4">
         <thead>
         <tr>
             <th>Fecha</th>
