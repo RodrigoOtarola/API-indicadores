@@ -12,6 +12,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <!--Google Icon-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
@@ -48,7 +49,7 @@
             </div>
             <div class="collapsible-body white">
                 <p>En contruccion:</p>
-                <!--                <p>--><?php //include 'conversor.php' ?><!--</p>-->
+                <p><?php include 'conversor.php' ?></p>
             </div>
         </li>
     </ul>
