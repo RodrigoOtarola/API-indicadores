@@ -5,7 +5,7 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Practica API</title>
+    <title>Indicadores</title>
     <link rel="stylesheet" href="css/style.css" type="text/css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -33,6 +33,16 @@
             <div class="collapsible-body">
                 <p>Selecciona el indicador:</p>
                 <p><?php include 'indCalculo.php' ?></p>
+            </div>
+        </li>
+        <li>
+            <div class="collapsible-header">
+                <i class="material-icons">calculate</i>
+                Conversión monetaria.
+                <span class="badge"></span></div>
+            <div class="collapsible-body">
+                <p>En contruccion:</p>
+                <p><?php include 'conversor.php'?></p>
             </div>
         </li>
     </ul>
