@@ -14,7 +14,17 @@ function calcular(){
             `
         })
 }*/
+
 //Leer selección de radio button
+// $(document).ready(function(){
+//     $("#peso").click(function(){
+//         $("p").hide();
+//     });
+//     $("#show").click(function(){
+//         $("p").show();
+//     });
+// });
+
 const peso = document.querySelector('#PesoaInd');
 
 peso.addEventListener('click', () => {
